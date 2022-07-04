@@ -1,4 +1,66 @@
 <!DOCTYPE html>
 <html>
-    
+    <head>
+        <h1 id="titles">
+            <title>
+                Hackathon 2022-2023 Feedback Form
+            </title>
+            <link rel="stylesheet" href="styles.css" />
+        </h1>
+    </head>
+    <body>
+        <h1 id="title">Hackathon 2022-2023 Survey Form</h1>
+
+        <p id="description">Please fill the form correctly and ensure all your details are correct and complete </p>
+
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" class="fieldInput">Enter your name: <input type="text" name="name" placeholder="Name and surname. eg Sarah Hollowfield" required /></label>
+
+                <label id="email-label" class="fieldInput">Enter your email: <input type="email" name="email" placeholder="eg. abcdef@gmail.com" required /></label>
+
+                <label class="fieldInput">Enter your mobile number: <input type="tel" name="mob-number" maxlength="8" minlength="8" pattern="[0-9]{10}" placeholder="eg 0501234567" required /></label>
+
+                <label id="age" class="fieldInput">Enter your age: <input type="number" name="age" min="0" placeholder="optional" /></label>
+                
+            </fieldset>
+
+            <fieldset>
+
+                <label>Select the course/s which you have done recently on freeCodeCamp: 
+                    <select id="dropdown">
+                        <option value="">(select one)</option>
+                        <option value="1">Data Visualzation</option>
+                        <option value="2">Game Development</option>
+                        <option value="3">AI Bot</option>
+                    </select>
+                </label><br>
+
+                <label>Would you recommend freeCodeCamp to a friend? 
+                <!-- <label class="innerLabel"><input type="radio" name="rec" />Definitely</label>
+                <label class="innerLabel"><input type="radio" name="rec" />Maybe</label>
+                <label class="innerLabel"><input type="radio" name="rec" />Not Sure</label> -->
+                    <label class="innerLabel"><input type="radio" name="rec" />Definitely</label>
+                    <label class="innerLabel"><input type="radio" name="rec" />Maybe</label>
+                    <label class="innerLabel"><input type="radio" name="rec" />Not Sure</label>
+                </label>
+            
+            </fieldset>
+
+            <fieldset>
+                <label>What would you like to see improved ? (check all that apply)</label>
+                <label class="innerLabel"><input type="checkbox" name="smart" />Front-End Projects</label>
+                <label class="innerLabel"><input type="checkbox" name="will" />Back-End Projects</label>
+                <label class="innerLabel"><input type="checkbox" name="social" />Data Science Projects</label>
+                <label class="innerLabel"><input type="checkbox" name="prob" />Open Source Community</label>
+                <label class="innerLabel"><input type="checkbox" name="hard-worker" />Wiki</label>
+            </fieldset>
+
+            <fieldset>
+                <label>Add any comments or questions you may have about freeCodeCamp below <textarea name="q&a" rows="4" cols="50" placeholder="500 words"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Submit" class="submitButton">
+        </form>
+    </body>
 </html>
