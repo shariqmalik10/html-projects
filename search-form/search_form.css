@@ -1,0 +1,118 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background-image: url('https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg');
+    top: 50%;
+}
+
+.title {
+    text-align: center;
+}
+
+form {
+    display: block;
+    width: 100vw;
+    max-width: 450px;
+    min-width: 200px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+    background-color: lightsteelblue;
+    background-blend-mode: luminosity;
+    border-style: solid;
+    border-width: medium;
+    font-size: 16px;
+}
+
+fieldset{
+    border: none;
+    padding: 0.6em;
+}
+
+label {
+    display: block;
+}
+
+#description {
+    display: block;
+    text-align: center;
+}
+
+input[name="name"] {
+    display: block;
+    width: 26.5rem;
+    height: 1.5rem;
+}
+
+.submit-btn {
+    display: block;
+    width: 70%;
+    margin-top: 1em;
+    margin-bottom: 0;
+    margin-right: 20rem;
+    margin-left: 3rem;
+    height: 1.5em;
+    font-size: 20px;
+    background-color: white;
+    border-color: black;
+    min-width: 100px;
+    text-align: center;
+}
+
+#country-dropdown{
+    font-size: 1.3rem;
+    width: 26.5rem;
+    padding: 0.6em;
+}
+
+label.error {
+    font-weight: 70;
+    display: block;
+    color: red;
+}
+
+.input_container {
+    padding: 60px;
+}
+
+/* Search bar */
+input[name="search"] {
+    position: fixed;
+    top: 16%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 16px;
+    background: transparent;
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    border: solid 3px #9A86FD;
+    outline: none;
+    border-radius: 35px;
+    transition: all 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 lightsteelblue;
+}
+
+input[name="search"]::placeholder {
+    color: #efefef;
+    opacity: 0;
+    transition: opacity 150ms ease-out;
+}
+
+input[name="search"]:focus::placeholder {
+    opacity: 1;
+}
+
+input[name="search"]:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #FFB870;
+}
+
+input[name="search"]:focus,
+input[name="search"]:not(:placeholder-shown) {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #FFB870;
+}
+

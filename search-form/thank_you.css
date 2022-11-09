@@ -1,0 +1,10 @@
+body {
+    align-items: center;
+    justify-content: center;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background-image: url('https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg');
+    top: 50%;
+    text-align: center;
+}

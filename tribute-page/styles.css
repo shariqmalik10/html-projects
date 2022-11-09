@@ -1,0 +1,55 @@
+body {
+    background-color: honeydew;
+}
+#subject{
+    font-size: 32px;
+    text-align: center;
+    align-self: center;
+    color: darkslategrey;
+}
+#title {
+    text-align: center;
+    font-size: 16px;
+}
+
+#main {
+    display: grid;
+    align-items: center;
+    border-radius: 15px 15px 15px 15px;
+    background-color: lightgrey;
+}
+
+#tribute-info {
+    background-color: #666666;
+    display: flexbox;
+    /* top-left | top-right | bottom-right | bottom-left */
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    font-weight: bold;
+}
+#short-info{
+    display: grid;
+    text-align: center;
+}
+#achievement-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#ullist{
+    width: 500px;
+    justify-content: center;
+}
+
+#image{
+    max-width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#img-caption{
+    text-align: center;
+}
