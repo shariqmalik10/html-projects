@@ -35,12 +35,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
     flex-wrap: wrap;
 }
 #ullist{
     width: 500px;
-    justify-content: center;
+    display: inline-block;
+    text-align: left;
+}
+ul li {
+    padding: 10px 0px;
+    font-weight: normal;
 }
 
 #image{
