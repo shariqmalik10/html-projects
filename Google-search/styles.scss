@@ -1,0 +1,83 @@
+$customcol : #202124;
+
+body {
+    background-color: $customcol;
+    color: #fff;
+}
+
+#google{
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 90px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 65vh;
+}
+
+.grid-item{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2px;
+    width: 100%
+}
+
+.grid-item input[type="text"]{
+    width: 100%; /* Expand the search bar to fill the container */
+    height: 50px; /* Increase the height for better alignment with Google text */
+    padding: 10px;
+    font-size: 15px;
+    border:0.5px solid white; /* Remove the border for a cleaner look */
+    border-color: white;
+    background-color: $customcol;
+    color: white;
+    outline: none;
+}
+
+/*on click change the back ground color to gray */
+.grid-item input[type="text"]:hover, 
+.grid-item input[type="text"]:active {
+    background-color: #303134;
+    color: white; /* Text color */
+  }
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px 20px 20px 20px;
+    width: 500px; /* Fixed width */
+    height: 20px; /* Fixed height */
+    font-size: 15px;
+}
+
+%button {
+    background-color: #303134;
+    color: white;
+    border: none;
+    border-radius: 2px;
+    height: 30px;
+    font-size: 13px;
+}
+%button:hover {
+    border: 0.5px solid white; /* Change border color to match the button background color */
+}
+
+#submit-btn{
+    @extend %button;
+    width: 70px;
+}
+
+#lucky-btn{
+    @extend %button;
+    width: 120px;
+}
+
+
+
